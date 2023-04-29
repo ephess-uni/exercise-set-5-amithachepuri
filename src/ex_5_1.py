@@ -3,7 +3,7 @@ try:
     from src.ex_5_0 import line_count
 except ImportError:
     from ex_5_0 import line_count
-import argparse as e0
+import argparse
 
 def main(infile):
     """Call line_count with the infile argument."""
@@ -21,4 +21,4 @@ if __name__ == "__main__":
     description='This program prints the number of lines in infile.')
     parser.add_argument('infile',help='Name of the input file')
     args=parser.parse_args()
-    e0.line_count(args.infile)
+    line_count(args.infile)
